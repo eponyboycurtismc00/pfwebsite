@@ -1,0 +1,6 @@
+# Pathfinder Website Manifest
+applications:
+- name: PFWebsite
+memory: 512MB
+host: pfwebsite
+buildpack:  php_buildpack
