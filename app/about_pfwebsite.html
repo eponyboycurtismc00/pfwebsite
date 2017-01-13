@@ -3,22 +3,12 @@
 
 <head>
    <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-   <meta name="description" content="Bootstrap Admin App + jQuery">
-   <meta name="keywords" content="app, responsive, jquery, bootstrap, dashboard, admin">
    <title>About - Pathfinder Website</title>
-   <!-- =============== VENDOR STYLES ===============-->
-   <!-- FONT AWESOME-->
-   <link rel="stylesheet" href="../vendor/fontawesome/css/font-awesome.min.css">
-   <!-- SIMPLE LINE ICONS-->
-   <link rel="stylesheet" href="../vendor/simple-line-icons/css/simple-line-icons.css">
-   <!-- ANIMATE.CSS-->
-   <link rel="stylesheet" href="../vendor/animate.css/animate.min.css">
-   <!-- WHIRL (spinners)-->
-   <link rel="stylesheet" href="../vendor/whirl/dist/whirl.css">
-   <!-- =============== PAGE VENDOR STYLES ===============-->
-   <!-- =============== APP STYLES ===============-->
-   <link rel="stylesheet" href="css/app.css" id="maincss">
+   
+	<!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -44,24 +34,6 @@
             <div class="nav-wrapper">
                <!-- START Left navbar-->
                <ul class="nav navbar-nav">
-                  <li>
-                     <!-- Button used to collapse the left sidebar. Only visible on tablet and desktops-->
-                     <a href="#" data-toggle-state="aside-collapsed" class="hidden-xs">
-                        <em class="fa fa-navicon"></em>
-                     </a>
-                     <!-- Button to show/hide the sidebar on mobile. Visible on mobile only.-->
-                     <a href="#" data-toggle-state="aside-toggled" data-no-persist="true" class="visible-xs sidebar-toggle">
-                        <em class="fa fa-navicon"></em>
-                     </a>
-                  </li>
-                  <!-- START User avatar toggle-->
-                  <li>
-                     <!-- Button used to collapse the left sidebar. Only visible on tablet and desktops-->
-                     <a id="user-block-toggle" href="#user-block" data-toggle="collapse">
-                        <em class="icon-user"></em>
-                     </a>
-                  </li>
-                  <!-- END User avatar toggle-->
                   <!-- START lock screen-->
                   <li>
                      <a href="lock_PFWebsite.html" title="Lock screen">
@@ -79,56 +51,6 @@
                         <em class="icon-magnifier"></em>
                      </a>
                   </li>
-                  <!-- Fullscreen (only desktops)-->
-                  <li class="visible-lg">
-                     <a href="#" data-toggle-fullscreen="">
-                        <em class="fa fa-expand"></em>
-                     </a>
-                  </li>
-                  <!-- START Alert menu-->
-                  <li class="dropdown dropdown-list">
-                     <a href="#" data-toggle="dropdown">
-                        <em class="icon-bell"></em>
-                        <div class="label label-danger">11</div>
-                     </a>
-                     <!-- START Dropdown menu-->
-                     <ul class="dropdown-menu animated flipInX">
-                        <li>
-                           <!-- START list group-->
-                           <div class="list-group">
-                              <!-- list item-->
-                              <a href="#" class="list-group-item">
-                                 <div class="media-box">
-                                    <div class="pull-left">
-                                       <em class="fa fa-tasks fa-2x text-success"></em>
-                                    </div>
-                                    <div class="media-box-body clearfix">
-                                       <p class="m0">Pending Tasks</p>
-                                       <p class="m0 text-muted">
-                                          <small>11 pending task</small>
-                                       </p>
-                                    </div>
-                                 </div>
-                              </a>
-                              <!-- last list item -->
-                              <a href="#" class="list-group-item">
-                                 <small>More notifications</small>
-                                 <span class="label label-danger pull-right">3</span>
-                              </a>
-                           </div>
-                           <!-- END list group-->
-                        </li>
-                     </ul>
-                     <!-- END Dropdown menu-->
-                  </li>
-                  <!-- END Alert menu-->
-                  <!-- START Contacts button-->
-                  <li>
-                     <a href="#" data-toggle-state="offsidebar-open" data-no-persist="true">
-                        <em class="icon-notebook"></em>
-                     </a>
-                  </li>
-                  <!-- END Contacts menu-->
                </ul>
                <!-- END Right Navbar-->
             </div>
@@ -260,205 +182,6 @@
          </div>
          <!-- END Sidebar (left)-->
       </aside>
-      <!-- offsidebar-->
-      <aside class="offsidebar">
-          <!-- START Off Sidebar (right)-->
-          <nav>
-             <div role="tabpanel">
-                <!-- Nav tabs-->
-                <ul role="tablist" class="nav nav-tabs nav-justified">
-                   <li role="presentation" class="active">
-                      <a href="#app-settings" aria-controls="app-settings" role="tab" data-toggle="tab">
-                         <em class="icon-equalizer fa-lg"></em>
-                      </a>
-                   </li>
-                   <li role="presentation">
-                      <a href="#app-chat" aria-controls="app-chat" role="tab" data-toggle="tab">
-                         <em class="icon-users fa-lg"></em>
-                      </a>
-                   </li>
-                </ul>
-                <!-- Tab panes-->
-                <div class="tab-content">
-                   <div id="app-settings" role="tabpanel" class="tab-pane fade in active">
-                      <h3 class="text-center text-thin">Settings</h3>
-                      <div class="p">
-                         <h4 class="text-muted text-thin">Themes</h4>
-                         <div class="table-grid mb">
-                            <div class="col mb">
-                               <div class="setting-color">
-                                  <label data-load-css="css/theme-a.css">
-                                     <input type="radio" name="setting-theme" checked="checked">
-                                     <span class="icon-check"></span>
-                                     <span class="split">
-                                        <span class="color bg-info"></span>
-                                        <span class="color bg-info-light"></span>
-                                     </span>
-                                     <span class="color bg-white"></span>
-                                  </label>
-                               </div>
-                            </div>
-                            <div class="col mb">
-                               <div class="setting-color">
-                                  <label data-load-css="css/theme-b.css">
-                                     <input type="radio" name="setting-theme">
-                                     <span class="icon-check"></span>
-                                     <span class="split">
-                                        <span class="color bg-green"></span>
-                                        <span class="color bg-green-light"></span>
-                                     </span>
-                                     <span class="color bg-white"></span>
-                                  </label>
-                               </div>
-                            </div>
-                            <div class="col mb">
-                               <div class="setting-color">
-                                  <label data-load-css="css/theme-c.css">
-                                     <input type="radio" name="setting-theme">
-                                     <span class="icon-check"></span>
-                                     <span class="split">
-                                        <span class="color bg-gray"></span>
-                                        <span class="color bg-gray-light"></span>
-                                     </span>
-                                     <span class="color bg-white"></span>
-                                  </label>
-                               </div>
-                            </div>
-                            <div class="col mb">
-                               <div class="setting-color">
-                                  <label data-load-css="css/theme-d.css">
-                                     <input type="radio" name="setting-theme">
-                                     <span class="icon-check"></span>
-                                     <span class="split">
-                                        <span class="color bg-danger"></span>
-                                        <span class="color bg-danger-light"></span>
-                                     </span>
-                                     <span class="color bg-white"></span>
-                                  </label>
-                               </div>
-                            </div>
-                         </div>
-                         <div class="table-grid mb">
-                            <div class="col mb">
-                               <div class="setting-color">
-                                  <label data-load-css="css/theme-e.css">
-                                     <input type="radio" name="setting-theme">
-                                     <span class="icon-check"></span>
-                                     <span class="split">
-                                        <span class="color bg-info-dark"></span>
-                                        <span class="color bg-info"></span>
-                                     </span>
-                                     <span class="color bg-gray-dark"></span>
-                                  </label>
-                               </div>
-                            </div>
-                            <div class="col mb">
-                               <div class="setting-color">
-                                  <label data-load-css="css/theme-f.css">
-                                     <input type="radio" name="setting-theme">
-                                     <span class="icon-check"></span>
-                                     <span class="split">
-                                        <span class="color bg-green-dark"></span>
-                                        <span class="color bg-green"></span>
-                                     </span>
-                                     <span class="color bg-gray-dark"></span>
-                                  </label>
-                               </div>
-                            </div>
-                            <div class="col mb">
-                               <div class="setting-color">
-                                  <label data-load-css="css/theme-g.css">
-                                     <input type="radio" name="setting-theme">
-                                     <span class="icon-check"></span>
-                                     <span class="split">
-                                        <span class="color bg-gray-dark"></span>
-                                        <span class="color bg-gray"></span>
-                                     </span>
-                                     <span class="color bg-gray-dark"></span>
-                                  </label>
-                               </div>
-                            </div>
-                            <div class="col mb">
-                               <div class="setting-color">
-                                  <label data-load-css="css/theme-h.css">
-                                     <input type="radio" name="setting-theme">
-                                     <span class="icon-check"></span>
-                                     <span class="split">
-                                        <span class="color bg-danger-dark"></span>
-                                        <span class="color bg-danger"></span>
-                                     </span>
-                                     <span class="color bg-gray-dark"></span>
-                                  </label>
-                               </div>
-                            </div>
-                         </div>
-                      </div>
-                      <div class="p">
-                         <h4 class="text-muted text-thin">Layout</h4>
-                         <div class="clearfix">
-                            <p class="pull-left">Fixed</p>
-                            <div class="pull-right">
-                               <label class="switch">
-                                  <input id="chk-fixed" type="checkbox" data-toggle-state="layout-fixed">
-                                  <span></span>
-                               </label>
-                            </div>
-                         </div>
-                         <div class="clearfix">
-                            <p class="pull-left">Boxed</p>
-                            <div class="pull-right">
-                               <label class="switch">
-                                  <input id="chk-boxed" type="checkbox" data-toggle-state="layout-boxed">
-                                  <span></span>
-                               </label>
-                            </div>
-                         </div>
-                         <div class="clearfix">
-                            <p class="pull-left">RTL</p>
-                            <div class="pull-right">
-                               <label class="switch">
-                                  <input id="chk-rtl" type="checkbox">
-                                  <span></span>
-                               </label>
-                            </div>
-                         </div>
-                      </div>
-                      <div class="p">
-                         <h4 class="text-muted text-thin">Aside</h4>
-                         <div class="clearfix">
-                            <p class="pull-left">Collapsed</p>
-                            <div class="pull-right">
-                               <label class="switch">
-                                  <input id="chk-collapsed" type="checkbox" data-toggle-state="aside-collapsed">
-                                  <span></span>
-                               </label>
-                            </div>
-                         </div>
-                         <div class="clearfix">
-                            <p class="pull-left">Float</p>
-                            <div class="pull-right">
-                               <label class="switch">
-                                  <input id="chk-float" type="checkbox" data-toggle-state="aside-float">
-                                  <span></span>
-                               </label>
-                            </div>
-                         </div>
-                         <div class="clearfix">
-                            <p class="pull-left">Hover</p>
-                            <div class="pull-right">
-                               <label class="switch">
-                                  <input id="chk-hover" type="checkbox" data-toggle-state="aside-hover">
-                                  <span></span>
-                               </label>
-                            </div>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-             </div>
-          </nav>
-          <!-- END Off Sidebar (right)-->
-	  </aside>
       <!-- Main section-->
       <section>
          <!-- Page content-->
@@ -562,22 +285,14 @@
    <!-- =============== PAGE VENDOR SCRIPTS ===============-->
    <!-- SPARKLINE-->
    <script src="vendor/sparklines/jquery.sparkline.min.js"></script>
-   <!-- FLOT CHART-->
-   <script src="../vendor/Flot/jquery.flot.js"></script>
-   <script src="../vendor/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
-   <script src="../vendor/Flot/jquery.flot.resize.js"></script>
-   <script src="../vendor/Flot/jquery.flot.pie.js"></script>
-   <script src="../vendor/Flot/jquery.flot.time.js"></script>
-   <script src="../vendor/Flot/jquery.flot.categories.js"></script>
-   <script src="../vendor/flot-spline/js/jquery.flot.spline.min.js"></script>
+
    <!-- CLASSY LOADER-->
    <script src="../vendor/jquery-classyloader/js/jquery.classyloader.min.js"></script>
    <!-- MOMENT JS-->
    <script src="../vendor/moment/min/moment-with-locales.min.js"></script>
    <!-- SKYCONS-->
    <script src="../vendor/skycons/skycons.js"></script>
-   <!-- DEMO-->
-   <script src="js/demo/demo-flot.js"></script>
+
    <!-- =============== APP SCRIPTS ===============-->
    <script src="js/app.js"></script>
 </body>
